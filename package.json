@@ -1,0 +1,21 @@
+{
+    "name": "currency-converter-nodejs-backend",
+    "version": "1.0.0",
+    "description": "Currency Converter Backend NodeJS",
+    "main": "index.js",
+    "scripts": {
+        "start": "node server/server.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Max Alva",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.18.0",
+        "body-parser": "^1.18.3",
+        "dotenv": "^6.0.0",
+        "express": "^4.16.3"
+    },
+    "devDependencies": {
+        "eslint": "^5.4.0"
+    }
+}
