@@ -1,11 +1,8 @@
 const mongoose = require('mongoose');
 let Schema = mongoose.Schema;
 
-let countrySchema = new Schema({
-    alpha3: {
-        type: String
-    },
-    currencyId: {
+let currencySchema = new Schema({
+    id: {
         type: String
     },
     currencyName: {
@@ -14,12 +11,10 @@ let countrySchema = new Schema({
     currencySymbol: {
         type: String
     },
-    id: {
-        type: String
-    },
-    name: {
-        type: String
+    flag: {
+        type: String,
+        default: '_unknown.png'
     }
 }, { versionKey: false });
 
-module.exports = mongoose.model('Country', countrySchema);
+module.exports = mongoose.model('Currency', currencySchema);
